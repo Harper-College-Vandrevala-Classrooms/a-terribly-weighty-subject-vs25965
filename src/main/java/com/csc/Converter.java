@@ -21,7 +21,7 @@ public class Converter {
 
      public static final int OUNCES_LB = 16;
      int pounds = Math.round(ounces/OUNCES_LB);
-     int ouncesout = (ounces%OUNCES_LB);
+     int ouncesout = ((ounces%OUNCES_LB)*OUNCES_LB);
 
      if (pounds = 1)
      {
