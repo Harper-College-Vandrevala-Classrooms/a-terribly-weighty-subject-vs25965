@@ -25,11 +25,11 @@ public class Converter {
 
      if (pounds = 1)
      {
-       System.out.println(" %d%n lb %d%n oz",pounds,OUNCES_LB);
+       System.out.println(" %d%n lb %d%n oz",pounds,ouncesout);
      }
      else 
      {
-       System.out.println(" %d%n lbs %d%n oz",pounds,OUNCES_LB);
+       System.out.println(" %d%n lbs %d%n oz",pounds,ouncesout);
      }
 
   }
