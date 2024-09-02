@@ -1,9 +1,8 @@
-
 package com.csc;
 import java.io.*;
 
 public class Converter {
- 
+    
     public String toPounds (int ounces) {
 
       String output;
@@ -27,7 +26,7 @@ public class Converter {
     public String toPoundsAndOunces(int ounces) {
 
       String output1;
-      String output2;
+      String output3;
       int Oz_Lb = 16;
       int pounds1 = Math.round(ounces/Oz_Lb);
       int ouncesout = (ounces%Oz_Lb);
@@ -39,10 +38,15 @@ public class Converter {
       }
       else 
       {
-        output2 = pounds1 + " lbs  " + ouncesout + " oz"; 
-        return output2;
+        output3 = pounds1 + " lbs  " + ouncesout + " oz"; 
+        return output3;
       }
-   }
 
-  }
+     
+       } 
+   }
+   
+
+
+ 
 
