@@ -1,9 +1,21 @@
 package com.csc;
 import java.io.*;
+import java.util.Scanner;
 
 public class Converter {
     
-    public String toPounds (int ounces) {
+  public static void main (String [] args)
+{
+  System.out.println("Enter a number to convert to pounds ");
+     Scanner in = new Scanner(System.in);
+     int ounces = in.nextInt();
+     toPounds (ounces);
+     toPoundsAndOunces(ounces);
+     
+     
+
+}
+public static void toPounds (int ounces) {
 
       String output;
       String output2;
@@ -12,18 +24,19 @@ public class Converter {
        if (pounds == 1)
       {
          output = String.format("%.4f",pounds) + " lb";
-          return output;
+         System.out.println(output);
           
       }
       else  
       {
          output2 = String.format("%.4f",pounds) + " lb"; 
-         return output2;
+         System.out.println(output2);
       }  
+      
     }
     
     
-    public String toPoundsAndOunces(int ounces) {
+    public static void toPoundsAndOunces(int ounces) {
 
       String output1;
       String output3;
@@ -34,18 +47,20 @@ public class Converter {
       if (pounds1 == 1)
       {
         output1 = pounds1 + " lb  " + ouncesout + " oz"; 
-        return output1;
+        System.out.println(output1);
       }
       else 
       {
         output3 = pounds1 + " lbs  " + ouncesout + " oz"; 
-        return output3;
+        System.out.println(output3);
       }
 
-     
        } 
    }
    
+   
+ 
+    
 
 
  
